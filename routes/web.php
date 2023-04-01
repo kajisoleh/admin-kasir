@@ -72,5 +72,8 @@ Route::group(['middleware' => ['auth','checkRole:admin,kasir']], function(){
     Route::post('/transaksi/addToCart', [TransaksiController::class, 'addToCart']);
     Route::get('/transaksi/deleteCart/{id}', [TransaksiController::class, 'deleteCart']);
     Route::post('/transaksi/store', [TransaksiController::class, 'store']);
+    Route::get('/transaksi/detail/{id}', [TransaksiController::class, 'show']);
+
+    
 
 });
