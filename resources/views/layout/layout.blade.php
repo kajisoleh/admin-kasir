@@ -43,7 +43,7 @@
         <div class="nav-header">
 
             <div class="brand-logo">
-                <a href="index.html">
+                <a>
                     <b class="logo-abbr"><img src="/assets/images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="/assets/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
@@ -111,7 +111,7 @@
                             <i class="fa fa-dashboard menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-label">UI Components</li>
+                    <li class="nav-label">Menu Lainnya</li>
 
                     @if (Auth::user()->role == 'admin')
 
