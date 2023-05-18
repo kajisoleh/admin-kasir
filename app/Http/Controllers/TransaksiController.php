@@ -21,6 +21,9 @@ class TransaksiController extends Controller
     
         return view('kasir.transaksi.list',$data);
     }
+    
+    
+
 
     public function create()
     {
@@ -81,6 +84,15 @@ class TransaksiController extends Controller
             session()->put('cart', $cart);
             return redirect()->back()->with('success', 'Data Berhasil Ditambah');
         }
+    }
+
+    public function show($id){
+        $title            = 'Detail Transaksi';
+        $detail_transaksi  =  Transaksi::find($id);
+        return view('kasir.transaksi.show',compact('title','detail_transaksi'));
+          
+         
+        
     }
 
     public function deleteCart($id)

@@ -47,7 +47,7 @@
                     <b class="logo-abbr"><img src="/assets/images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="/assets/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="/assets/images/logo-text.png" alt="">
+                     <h3 class="text-center text-white">LAPAK GAMING</h3>
                     </span>
                 </a>
             </div>
@@ -73,9 +73,14 @@
                 <div class="header-right">
                     <ul class="clearfix">
                         <li class="icons dropdown">
-                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <h5 class="m-0 d-inline-block ">
+                           {{ auth()->user()->name }}
+                                
+                           
+                                </h5>
                                 <span class="activity active"></span>
-                                <img src="/assets/images/user/form-user.png" height="40" width="40" alt="">
+                                <img class="ms-2" src="/assets/images/user/form-user.png" height="40" width="40" alt="">
                             </div>
                             <div class="drop-down dropdown-profile   dropdown-menu">
                                 <div class="dropdown-content-body">
@@ -228,7 +233,7 @@
             swal({
                 title: "{{session ('success') }}",
                 text:  "{{session ('success')}}",
-                icon: "succes",
+                icon: "success",
                 buttons: {
                     confirm: {
                         text: "Confirm Me",

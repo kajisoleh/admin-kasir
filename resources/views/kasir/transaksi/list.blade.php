@@ -45,7 +45,7 @@
                                         <td>{{ $row->no_transaksi }}</td>
                                         <td>{{ date('d/M/Y', strtotime($row->tgl_transaksi)) }}</td>
                                         <td>Rp. {{ number_format($row->total_bayar) }}</td>
-                                        <td><a href="#Detail{{ $row->id }}"  data-toggle="modal" class="btn btn-xs btn-info"><i class="fa fa-edit"></i> Detail </a> </td>
+                                        <td><a href="{{ route('detail-transaksi',$row->id) }}" class="btn btn-xs btn-info"><i class="fa fa-edit"></i> Detail </a> </td>
                                         
                                     </tr>
                                     @endforeach
