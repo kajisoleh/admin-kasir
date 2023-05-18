@@ -42,10 +42,10 @@
                                 <tr>
                                     <td>{{ $detail_transaksi->no_transaksi }}</td>                          
                                     <td>{{ date('d/M/Y', strtotime($detail_transaksi->tgl_transaksi)) }}</td>
-                                    <td>{{ $detail_transaksi->subtotal }}</td>
-                                    <td>{{ $detail_transaksi->diskon }}</td>
-                                    <td>{{ $detail_transaksi->kembalian }}</td>
-                                    <td>{{ $detail_transaksi->uang_pembeli }}</td>
+                                    <td>Rp. {{ number_format($detail_transaksi->subtotal) }}</td>
+                                    <td>Rp. {{ number_format($detail_transaksi->diskon) }}</td>
+                                    <td>Rp. {{ number_format($detail_transaksi->kembalian) }}</td>
+                                    <td>Rp. {{ number_format($detail_transaksi->uang_pembeli) }}</td>
                                     <td>Rp. {{ number_format($detail_transaksi->total_bayar) }}</td>
                                 </tr>
                             </table>
