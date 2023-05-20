@@ -24,7 +24,7 @@ use App\Http\Controllers\TransaksiController;
 
 // Login
 Route::get('/', [AuthController::class, 'index']);
-Route::post('/cek_login', [AuthController::class, 'cek_login']);
+Route::post('/cek_login', [AuthController::class, 'cek_login'])->name('login');
 Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::group(['middleware' => ['auth','checkRole:admin']], function(){
@@ -73,7 +73,8 @@ Route::group(['middleware' => ['auth','checkRole:admin,kasir']], function(){
     Route::get('/transaksi/deleteCart/{id}', [TransaksiController::class, 'deleteCart']);
     Route::post('/transaksi/store', [TransaksiController::class, 'store']);
     Route::get('/transaksi/detail/{id}', [TransaksiController::class, 'show'])->name('detail-transaksi');
-
+    Route::get('/transaksi/delete/{id}', [TransaksiController::class, 'destroy'])->name('delete-transaksi');
+    Route::get('/transaksi/cetak/{id}', [TransaksiController::class, 'cetak'])->name('cetak-transaksi');
     
 
 });

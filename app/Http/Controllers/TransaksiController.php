@@ -89,10 +89,24 @@ class TransaksiController extends Controller
     public function show($id){
         $title            = 'Detail Transaksi';
         $detail_transaksi  =  Transaksi::find($id);
-        return view('kasir.transaksi.show',compact('title','detail_transaksi'));
-          
-         
+        return view('kasir.transaksi.show',compact('title','detail_transaksi'));              
         
+    }
+
+    public function cetak($id){
+        $title            = 'Cetak Transaksi';
+        $cetak_transaksi  =  Transaksi::find($id);
+        return view('kasir.transaksi.cetak',compact('title','cetak_transaksi'));              
+        
+    }
+
+    public function destroy($id){
+
+        $delete_transaksi = Transaksi::find($id);
+        $delete_transaksi->delete();
+        return back();
+        
+
     }
 
     public function deleteCart($id)
