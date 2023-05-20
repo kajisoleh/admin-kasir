@@ -24,8 +24,7 @@
                         </div>
                         <hr/>
 
-                        <a href="/transaksi" class="btn btn-sm btn-primary"><i class="fa fa-arrow-left"></i>
-                           Kembali
+                        <a href="/transaksi" class="btn btn-sm btn-primary"><i class="fa fa-undo"></i>  Kembali
                         </a>
                         <hr/>
                         <div class="table-responsive">

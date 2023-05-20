@@ -44,7 +44,7 @@ class TransaksiController extends Controller
         $kodetampil = "NT-".$batas;
 
         $data = array(
-            'title'        => 'Creat Data Transaksi',
+            'title'        => 'Data Detail Transaksi',
             'data_barang'  => Barang::all(),
             'data_diskon'  => Diskon::all(),
             'no_transaksi' => $kodetampil,

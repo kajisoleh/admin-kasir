@@ -52,8 +52,8 @@
                                         <td>{{ $row->stok}} Pcs</td>
                                         <td>Rp. {{ number_format($row->harga)}}</td>
                                         <td>
-                                            <a href="#modalEdit{{ $row->id }}"  data-toggle="modal" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i>Edit</a>
-                                            <a href="#modalHapus{{ $row->id }}" data-toggle="modal" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Hapus</a>
+                                            <a href="#modalEdit{{ $row->id }}"  data-toggle="modal" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i> Edit</a>
+                                            <a href="#modalHapus{{ $row->id }}" data-toggle="modal" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Hapus</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -103,8 +103,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i>Close</button>
-                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i> Kembali</button>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
             </div>
         </form>
         </div>
@@ -147,8 +147,8 @@
                     </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i>Close</button>
-                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i> Kembali</button>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
             </div>
         </form>
         </div>
@@ -172,8 +172,8 @@
             </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i>Close</button>
-                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>Hapus</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i> Kembali</button>
+                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Hapus</button>
             </div>
         </form>
         </div>
