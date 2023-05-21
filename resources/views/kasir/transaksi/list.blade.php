@@ -47,10 +47,10 @@
                                         <td>Rp. {{ number_format($row->total_bayar) }}</td>
                                         <td>
                                         <a href="{{ route('detail-transaksi',$row->id) }}" class="btn btn-xs btn-info"><i class="fa fa-edit"></i> Detail </a>                                
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Hapus</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $row->id }}" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Hapus</a>
                                         <a href="{{ route('cetak-transaksi',$row->id) }}" class="btn btn-xs btn-secondary"><i class="fa fa-print"></i> Cetak </a> 
                                                                                
-               <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal fade" id="deleteModal{{ $row->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                      <div class="modal-dialog">
                          <div class="modal-content">
                              <div class="modal-header">

@@ -33,6 +33,11 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'email' => 'unique:users,email',
+        ],[
+            'email.unique' => 'Email yang sama sudah digunakan'
+        ]);
         User::create([
             'name'      => $request->name,
             'email'     => $request->email,

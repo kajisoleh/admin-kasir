@@ -26,7 +26,21 @@
                         </button>    
                     </div>
                     </div>
+                    {{-- @if (session('succes')) --}}
+                   
+                    {{-- @endif --}}
+                    
+                                       
                     <div class="card-body"> 
+                   
+                        @foreach ($errors->all() as $item)
+                   
+
+                        <div class="alert alert-danger" role="alert">
+                            {{$item}} 
+                          </div>
+    
+                        @endforeach
                                                                   
                         <div class="table-responsive">
                             <table class="table table-striped table-bordered zero-configuration">
