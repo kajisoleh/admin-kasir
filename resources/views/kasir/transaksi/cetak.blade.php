@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="card-body mx-4">
                         <div class="container">
-                            <p class="my-5 " style="font-size: 30px;">TERIMA KASIH<br>
+                            <p class="my-5 " style="font-size:20px;">TERIMA KASIH<br>
                                 TELAH BERBELANJA DI TOKO KAMI
                             </p>
                             <div class="row">
@@ -19,7 +19,7 @@
                                     <p>Subtotal</p>
                                 </div>                                                                               
                                 <div class="col-xl-2">
-                                    <p class="float-end">{{ number_format($cetak_transaksi->subtotal) }}
+                                    <p class="float-end">Rp. {{ number_format($cetak_transaksi->subtotal) }}
                                     </p>
                                 </div>
                                 <hr style="border-color:black">
@@ -27,7 +27,7 @@
                                     <p>Diskon</p>
                                 </div>                                                                               
                                 <div class="col-xl-2">
-                                    <p class="float-end">{{ number_format($cetak_transaksi->diskon) }}
+                                    <p class="float-end">Rp. {{ number_format($cetak_transaksi->diskon) }}
                                     </p>
                                 </div>
                                 <hr style="border-color:black">
@@ -37,7 +37,7 @@
                                     <p>Kembalian</p>
                                 </div>
                                 <div class="col-xl-2">
-                                    <p class="float-end">{{ number_format($cetak_transaksi->kembalian) }}
+                                    <p class="float-end">Rp. {{ number_format($cetak_transaksi->kembalian) }}
                                     </p>
                                 </div>
                                 <hr style="border-color:black">
@@ -47,7 +47,7 @@
                                     <p>Uang Pembeli</p>
                                 </div>
                                 <div class="col-xl-2">
-                                    <p class="float-end">{{ number_format($cetak_transaksi->uang_pembeli) }}
+                                    <p class="float-end">Rp. {{ number_format($cetak_transaksi->uang_pembeli) }}
                                     </p>
                                 </div>
                                 <hr style="border: 2px solid black;">

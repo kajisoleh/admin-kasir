@@ -24,7 +24,7 @@
                         </div>
                         <hr/>
 
-                        <a href="/transaksi" class="btn btn-sm btn-primary"><i class="fa fa-undo"></i>  Kembali
+                        <a href="/transaksi" class="btn btn-sm btn-secondary"><i class="fa fa-undo"></i>  Kembali
                         </a>
                         <hr/>
                         <div class="table-responsive">
@@ -33,7 +33,7 @@
                                     <th>No Transaksi</th>
                                     <th>Tanggal Transaksi</th>
                                     <th>Subtotal</th>
-                                    <th>Diskon</th>
+                                    <th>Diskon 10%</th>
                                     <th>Kembalian</th>
                                     <th>Uang Pembeli</th>
                                     <th>Total Bayar</th>

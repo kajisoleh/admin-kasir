@@ -36,7 +36,7 @@ class UserController extends Controller
         $request->validate([
             'email' => 'unique:users,email',
         ],[
-            'email.unique' => 'Email yang sama sudah digunakan'
+            'email.unique' => 'Email yang sama sudah digunakan.'
         ]);
         User::create([
             'name'      => $request->name,

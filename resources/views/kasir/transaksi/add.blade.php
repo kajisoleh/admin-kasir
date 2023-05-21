@@ -128,8 +128,8 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save Changes</button>
-                        <a href="/transaksi" class="btn btn-danger"><i class="fa fa-undo"></i> Cancel</a>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
+                        <a href="/transaksi" class="btn btn-secondary"><i class="fa fa-undo"></i> Kembali</a>
                     </div>
                     </form>
                 </div>
@@ -160,8 +160,8 @@
                 <div id="tampil_barang"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i> Close</button>
-                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-undo"></i> Kembali</button>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
             </div>
             </form>
         </div>
