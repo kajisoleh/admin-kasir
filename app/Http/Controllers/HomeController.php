@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = array(
-            'title'=> 'Home Page',
+            'title'=> 'Beranda',
             'data_barang' => Barang::count(),
             'data_transaksi' => Transaksi::count(),
             'seluruh_pendapatan' => Transaksi::all(),
